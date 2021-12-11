@@ -5,7 +5,7 @@ const initialState = {
     {
       id: 1,
       title: "Nikhil",
-      catagoty: "Programmer",
+      role: "Programmer",
     },
   ],
 };
