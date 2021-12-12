@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from "./containers/Header";
-import { ProductDetails } from "./containers/ProductDetails";
-import { ProductListing } from "./containers/ProductListing";
+import ProductComponent from "./containers/ProductComponent";
+import ProductListing from "./containers/ProductListing";
 
 const App = () => {
   return (
@@ -11,8 +11,12 @@ const App = () => {
       <Router>
         <Header />
         <Switch>
-          <Route path="/" exact component={ProductDetails} />
-          <Route path="/product/:productId" exact component={ProductListing} />
+          <Route path="/" exact component={ProductListing} />
+          <Route path="/product/:productId" component={ProductComponent} />
+
+          {/* <Route path="/" exact component={ProductListing} />
+          <Route path="/product/:productId" exact component={ProductListing} /> */}
+
           <Route>404 | Page Not Found</Route>
         </Switch>
       </Router>

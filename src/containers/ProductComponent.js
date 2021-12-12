@@ -1,14 +1,12 @@
 import React from "react";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 const ProductComponent = () => {
-  const products = useSelector((state) => state.allProducts.products);
-  const { title, role } = products[0];
+  // const products = useSelector((state) => state.allProducts.products);
 
   return (
     <div>
-      <p>{title}</p>
-      <p>{role}</p>
+      <h3>Title</h3>
     </div>
   );
 };
