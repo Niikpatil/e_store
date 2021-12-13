@@ -7,24 +7,31 @@ const ProductComponent = () => {
   const renderList = products.map((product) => {
     const { id, title, image, category } = product;
     return (
-      <div className="container">
-        <div className="row row-cols-1" key={id}>
-          <div className="col-6 col-sm-4">
-            <Link to={`/product/${id}`}>
-              <div className="card shadow-sm" style={{ width: "18rem" }}>
-                <img src={image} className="card-img-top" alt={title} />
-                <div className="card-body">
-                  <h5 className="card-title"> {title}</h5>
-                  <p className="card-text">{category}</p>
-                </div>
-              </div>
-            </Link>
+      <div key={id}>
+        <Link to={`/product/${id}`}>
+          <div className="card shadow-sm m-3" style={{ width: "20rem" }}>
+            <img src={image} className="card-img-top" alt={title} />
+            <div className="card-body">
+              <h5 className="card-title">{title}</h5>
+              <p className="card-text">{category}</p>
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     );
   });
-  return <>{renderList}</>;
+
+  return (
+    <div className="container px-4">
+      <div className="row  gx-5">
+        <div className="col column">
+          <div className="d-flex align-content-center flex-wrap">
+            {renderList}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default ProductComponent;

@@ -9,7 +9,7 @@ import {
 
 const ProductDetails = () => {
   const product = useSelector((state) => state.product);
-  const { title, image, category } = product;
+  const { title, image, price, category, description } = product;
 
   const { productId } = useParams();
   const dispatch = useDispatch();
@@ -32,24 +32,32 @@ const ProductDetails = () => {
   }, [productId]);
 
   return (
-    <div className="container">
-      <div className="row">
-        {Object.keys(product).length === 0 ? (
-          <div>...Loading</div>
-        ) : (
-          <div className="col-6 col-sm-4">
-            <div
-              className="card m-4 rounded-3 shadow-sm"
-              style={{ width: "20rem" }}
-            >
-              <img src={image} className="card-img-top" alt={title} />
-              <div className="card-body">
-                <h5 className="card-title"> {title}</h5>
-                <p className="card-text">{category}</p>
+    <div class="container">
+      <div class="row ">
+        <div className="d-flex justify-content-start">
+          {Object.keys(product).length === 0 ? (
+            <div className="spinner-border" role="status">
+              <span className="sr-only"></span>
+            </div>
+          ) : (
+            <div className="d-flex align-items-center shadow-sm bg-secondary p-2 text-dark bg-opacity-10 ">
+              <img
+                src={image}
+                className="card-img-top"
+                alt={title}
+                style={{ width: "20rem" }}
+              />
+              <div className="flex-shrink-0">
+                <h5 className="flex-grow-1 ms-3"> {title}</h5>
+                <p className="flex-grow-1 ms-3">{category}</p>
+                <div className="text-wrap ms-3 " style={{ width: "18rem" }}>
+                  {description}
+                </div>
+                <h3 className="flex-grow-1 ms-3">$ {price}</h3>
               </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );
