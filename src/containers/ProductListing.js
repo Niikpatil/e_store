@@ -10,7 +10,7 @@ const ProductListing = () => {
 
   const fetchProducts = async () => {
     const response = await axios
-      .get("https://fakestoreapi.com/products")
+      .get(`https://fakestoreapi.com/products`)
       .catch((err) => {
         console.log("Err", err);
       });
