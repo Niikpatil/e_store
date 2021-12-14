@@ -9,9 +9,9 @@
 
 ## Project Description
 
-![screen shot](https://github.com/Niikpatil/redux_code/blob/master/public/project_images/ItemsList.png)
+![screen shot](https://github.com/Niikpatil/E-store/blob/master/public/project_images/ItemsList.png)
 
-![screen shot](https://github.com/Niikpatil/redux_code/blob/master/public/project_images/Items.png)
+![screen shot](https://github.com/Niikpatil/E-store/blob/master/public/project_images/Items.png)
 
 ### Run this web application on your device.
 
@@ -23,7 +23,7 @@
 
 ### Project Link
 
-[Github](https://github.com/Niikpatil/redux_code)
+[Github](https://github.com/Niikpatil/E-store)
 
 # License
 
