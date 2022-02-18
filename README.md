@@ -9,7 +9,7 @@
 
 ### Project Link
 
-- [Github](https://niikpatil.github.io/e_store/)
+- [Github Pages](https://niikpatil.github.io/e_store/)
 
 ## Project Description
 
@@ -24,10 +24,6 @@
 ### `npm install`
 
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### Project Link
-
-[Github](https://github.com/Niikpatil/E-store)
 
 # License
 
