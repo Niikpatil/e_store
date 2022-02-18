@@ -7,6 +7,10 @@
 - Redux
 - Axios
 
+### Project Link
+
+- [Github](https://niikpatil.github.io/e_store/)
+
 ## Project Description
 
 ![screen shot](https://github.com/Niikpatil/E-store/blob/master/public/project_images/ItemsList.png)
