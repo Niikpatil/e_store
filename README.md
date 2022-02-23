@@ -7,9 +7,9 @@
 - Redux
 - Axios
 
-### Project Link
+<!-- ### Project Link
 
-- [Github Pages](https://niikpatil.github.io/e_store/)
+- [Github Pages](https://niikpatil.github.io/e_store/) -->
 
 ## Project Description
 
